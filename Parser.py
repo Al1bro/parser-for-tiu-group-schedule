@@ -3,7 +3,6 @@ from urllib import response
 import requests
 from bs4 import BeautifulSoup
 from datetime import datetime, date, time
-import xlsxwriter
 
 def parse1(soup):
     
@@ -55,8 +54,6 @@ def parse1(soup):
         
             print(str(n2) + " " + str(vr2) + " " + str(ur2))
         
-    
-        
 
 def parse(html):
     soup = BeautifulSoup(html.text, features="html.parser")
@@ -67,11 +64,6 @@ def parse(html):
     print()
     print(groupp)
     parse1(soup)
-        
-    """table2 = soup\
-        .find('table', class_="main_table")"""
-    
-
     
 def main():
     url = 'http://www.mnokol.tyuiu.ru/rtsp/shedule/show_shedule.php?action=group&union=0&sid=246&gr=530&year=2022&vr=1'
