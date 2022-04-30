@@ -3,6 +3,9 @@ from urllib import response
 import requests
 from bs4 import BeautifulSoup
 from datetime import datetime, date, time
+from Const import Group
+from Const import Prep
+
 
 def parse1(soup):
     
