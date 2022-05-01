@@ -1,4 +1,5 @@
 from gettext import find
+from tokenize import group
 from urllib import response
 import requests
 from bs4 import BeautifulSoup
@@ -69,7 +70,8 @@ def parse(html):
     parse1(soup)
     
 def main():
-    url = 'http://www.mnokol.tyuiu.ru/rtsp/shedule/show_shedule.php?action=group&union=0&sid=246&gr=530&year=2022&vr=1'
+    a = Group.gngt19111
+    url = 'http://www.mnokol.tyuiu.ru/rtsp/shedule/show_shedule.php?action=group&union=0&' + a + '&year=2022&vr=1'
     page = requests.get(url)
     parse(page)
     print()
@@ -78,3 +80,4 @@ def main():
     
 if __name__ == "__main__":
     main()
+    
