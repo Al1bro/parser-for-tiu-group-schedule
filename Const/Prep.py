@@ -1,1 +1,4 @@
-BaclanovaEA = "prep=671";
+baclanovaEA = "prep=671";
+
+abaudylinaOV = "prep=273";
+avdeuchykOB = "prep=307";
